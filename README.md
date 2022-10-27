@@ -1,1 +1,1 @@
-# Ray education materials
+# Ray educational materials
