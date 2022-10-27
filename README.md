@@ -1,6 +1,6 @@
 # Ray Educational Materials
 
-© 2019-2022, Anyscale. All Rights Reserved'
+© 2022, Anyscale. All Rights Reserved
 
 ![Ray Logo](https://docs.ray.io/en/latest/_static/ray_logo.png)
 
