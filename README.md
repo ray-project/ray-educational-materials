@@ -10,8 +10,8 @@ framework for scaling your Python and machine learning workloads from a laptop t
 
 ## Published Content 📖
 
-| 🌍 Module| 📝 Notebook | 👩‍💻 Description | ⏱ Est. Time to Complete
-|:-----|:-----------|:----------------------------------------------------------|
+| 🌍 Module| 📝 Notebook | 👩‍💻 Description | ⏱ Est. Time to Complete |
+|-----|-----------|----------------------------------------------------------|-------------|
 | [Introductory Modules](https://github.com/ray-project/ray-educational-materials/tree/main/Introductory_modules) | [Introduction to Ray](https://github.com/ray-project/ray-educational-materials/blob/main/Introductory_modules/Introduction_to_Ray.ipynb)   | An Overview of Ray (Core, AIR, and Ecosystem) | 30 min |
 
 ### Prerequisites
