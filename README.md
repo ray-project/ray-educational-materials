@@ -1,26 +1,19 @@
 # Ray Educational Materials
 
-© 2022, Anyscale. All Rights Reserved
+© 2022, Anyscale Inc. All Rights Reserved
 
-![Ray Logo](https://docs.ray.io/en/latest/_static/ray_logo.png)
+![Ray Logo](_static/assets/Generic/ray_logo.png)
 
 Welcome to a collection of education materials focused on [Ray](https://www.ray.io/), a distributed compute
 framework for scaling your Python and machine learning workloads from a laptop to a cluster.
 
+## Training modules
 
-## Published Content 📖
+| Module | Description | Est. Time to Complete |
+|---|---|---|
+| [Introduction to Ray](https://github.com/ray-project/ray-educational-materials/blob/main/Introductory_modules/Introduction_to_Ray.ipynb) | An Overview of Ray (Core, AIR, and Ecosystem) | 30 min |
 
-| 🌍 Module| 📝 Notebook | 👩‍💻 Description | ⏱ Est. Time to Complete |
-|-----------|-----------|----------------------------------------------------------|-----|
-| [Introductory Modules](https://github.com/ray-project/ray-educational-materials/tree/main/Introductory_modules) | [Introduction to Ray](https://github.com/ray-project/ray-educational-materials/blob/main/Introductory_modules/Introduction_to_Ray.ipynb)   | An Overview of Ray (Core, AIR, and Ecosystem) | 30 min |
-
-### Prerequisites
-* 💻 Minimal experience with Ray
-* 🐍 Good skills in Python 
-* 📒 Familarity with Jupyter Notebooks
-* 🧠 Working knowledge of machine learning
-
-### Getting Involved
+## Getting Involved
 From here, you can learn and get more involved with our active community of developers and researchers by checking out the following resources:
 - [Ray's "Getting Started" Guides](https://docs.ray.io/en/latest/ray-overview/index.html): A collection of QuickStart Guides for every library including installation walkthrough, examples, blogs, talks, and more!
 - [Official Ray Website](https://www.ray.io/): Browse the ecosystem and use this site as a hub to get the information that you need to get going and building with Ray.
