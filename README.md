@@ -8,14 +8,14 @@ Welcome to a collection of education materials focused on [Ray](https://www.ray.
 
 ## Recommended Learning Path
 
-| Module                                                                                                                                                           | Description                                                                             |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| [Overview of Ray](https://github.com/ray-project/ray-educational-materials/blob/main/Introductory_modules/Overview_of_Ray.ipynb)                                 | An Overview of Ray and entire Ray ecosystem.                                            |
-| [Introduction to Ray AI Runtime](https://github.com/ray-project/ray-educational-materials/blob/main/Introductory_modules/Introduction_to_Ray_AIR.ipynb)          | An Overview of the Ray AI Runtime.                                                      |
-| [Ray Core: Remote Functions as Tasks](https://github.com/ray-project/ray-educational-materials/blob/main/Ray_Core/Ray_Core_1_Remote_Functions.ipynb)             | Learn how arbitrary functions to be executed asynchronously on separate Python workers. |
-| [Ray Core: Remote Objects](https://github.com/ray-project/ray-educational-materials/blob/main/Ray_Core/Ray_Core_2_Remote_Objects.ipynb)                          | Learn about objects that can be stored anywhere in a Ray cluster.                       |
-| [Ray Core: Remote Classes as Actors, part 1](https://github.com/ray-project/ray-educational-materials/blob/main/Ray_Core/Ray_Core_3_Remote_Classes_part_1.ipynb) | Work with stateful actors.                                                              |
-| [Ray Core: Remote Classes as Actors, part 2](https://github.com/ray-project/ray-educational-materials/blob/main/Ray_Core/Ray_Core_4_Remote_Classes_part_2.ipynb) | Learn "Tree of Actors" pattern.                                                         |
+| no | Module                                                                                                                                                           | Description                                                                             |
+|----|------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
+| 01 | [Overview of Ray](https://github.com/ray-project/ray-educational-materials/blob/main/Introductory_modules/Overview_of_Ray.ipynb)                                 | An Overview of Ray and entire Ray ecosystem.                                            |
+| 02 | [Introduction to Ray AI Runtime](https://github.com/ray-project/ray-educational-materials/blob/main/Introductory_modules/Introduction_to_Ray_AIR.ipynb)          | An Overview of the Ray AI Runtime.                                                      |
+| 03 | [Ray Core: Remote Functions as Tasks](https://github.com/ray-project/ray-educational-materials/blob/main/Ray_Core/Ray_Core_1_Remote_Functions.ipynb)             | Learn how arbitrary functions to be executed asynchronously on separate Python workers. |
+| 04 | [Ray Core: Remote Objects](https://github.com/ray-project/ray-educational-materials/blob/main/Ray_Core/Ray_Core_2_Remote_Objects.ipynb)                          | Learn about objects that can be stored anywhere in a Ray cluster.                       |
+| 05 | [Ray Core: Remote Classes as Actors, part 1](https://github.com/ray-project/ray-educational-materials/blob/main/Ray_Core/Ray_Core_3_Remote_Classes_part_1.ipynb) | Work with stateful actors.                                                              |
+| 06 | [Ray Core: Remote Classes as Actors, part 2](https://github.com/ray-project/ray-educational-materials/blob/main/Ray_Core/Ray_Core_4_Remote_Classes_part_2.ipynb) | Learn "Tree of Actors" pattern.                                                         |
 
 ## Connect with the Ray community
 
