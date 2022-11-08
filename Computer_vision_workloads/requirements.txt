@@ -1,0 +1,10 @@
+ray[air, tune, serve, rllib]==2.1.0
+transformers==4.24.0
+datasets==2.6.1
+huggingface-hub==0.10.1
+torch==1.13.0
+torchvision==0.14.0
+evaluate==0.3.0
+
+jupyter==1.0.0
+jupytext==1.14.1
