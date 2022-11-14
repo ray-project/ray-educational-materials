@@ -4,6 +4,11 @@
 
 ![Ray Logo](_static/assets/Generic/ray_logo.png)
 
+<a href="https://github.com/ray-project/ray-educational-materials"><img src="https://img.shields.io/github/stars/ray-project/ray-educational-materials?logo=Ray" alt="github-stars"></a>
+<a href="https://forms.gle/9TSdDYUgxYs8SA9e8"><img src="https://img.shields.io/badge/Ray-Join%20Slack-blue" alt="join-ray-slack"></a>
+<a href="https://discuss.ray.io/"><img src="https://img.shields.io/badge/Discuss-Ask%20Questions-blue" alt="discuss"></a>
+<a href="https://twitter.com/raydistributed"><img src="https://img.shields.io/twitter/follow/raydistributed?label=Follow" alt="twitter"></a>
+
 Welcome to a collection of education materials focused on [Ray](https://www.ray.io/), a distributed compute framework for scaling your Python and machine learning workloads from a laptop to a cluster.
 
 ## Recommended Learning Path
