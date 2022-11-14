@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Join Ray community on Slack
+    url: https://forms.gle/9TSdDYUgxYs8SA9e8
+    about: Find friends to discuss your new learnings in our Slack space.
+  - name: Ask a question or get support
+    url: https://discuss.ray.io/
+    about: Ask a question or request support for using Ray.
