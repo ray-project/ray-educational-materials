@@ -1,0 +1,19 @@
+name: Suggestion
+description: I have an idea to share
+title: "[Suggestion]: "
+labels: ["suggestion"]
+assignees:
+  - kamil-kaczmarek
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting your suggestion!
+        This helps a lot improving technical training resources.
+  - type: textarea
+    id: suggestion-content
+    attributes:
+      label: Please share your suggestion here
+      placeholder: Make sure to provide as much context as possible.
+    validations:
+      required: true

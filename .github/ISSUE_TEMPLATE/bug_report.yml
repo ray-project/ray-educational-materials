@@ -1,0 +1,50 @@
+name: Bug Report
+description: Problems and issues with training materials
+title: "[Bug]: "
+labels: ["bug"]
+assignees:
+  - kamil-kaczmarek
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting the problem!
+        Please make sure to include notebook name or URL, problem description and environment details in your report.
+        To ask questions or share ideas about the technical training, please submit "suggestion" instead.
+  - type: input
+    id: notebook
+    attributes:
+      label: Notebook with bug
+      description: Which notebook has a bug?
+      placeholder: URL or Notebook name
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Please describe the problem and paste logs
+      placeholder: >
+        Please explain what happened.
+        It is very helpful if you copy and paste logs with the exact error message or wrong behaviour here.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Environment info
+      description: Please specify the versions of Ray, Python, OS, and other libraries that are used.
+      placeholder: >
+        Please specify the versions of dependencies.
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Issue Severity
+      description: How does this issue affect your training experience?
+      multiple: false
+      options:
+          - "Low: Minor problem."
+          - "Medium: It is a significant difficulty but I can work around it."
+          - "High: It blocks me from completing my task."
+    validations:
+        required: false
