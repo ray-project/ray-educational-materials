@@ -1,4 +1,4 @@
-name: Notebooks test
+name: Courses test
 
 on:
   schedule:
@@ -6,7 +6,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  test-notebooks:
+  test-cv-notebooks:
+    name: Test computer vision course
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -15,15 +16,14 @@ jobs:
           - Introductory_modules/Overview_of_Ray.ipynb
     steps:
       - uses: actions/checkout@v3
-      - name: Setup Miniconda
-        uses: conda-incubator/setup-miniconda@v2
+      - uses: actions/setup-python@v4
         with:
-          activate-environment: py39
-          environment-file: test_environments/introductory_modules.yml
-          miniconda-version: "latest"
           python-version: "3.9"
-          channels: conda-forge,torch
-          auto-activate-base: false
+          cache: "pip"
+      - name: Install Python dependencies
+        uses: py-actions/py-dependency-install@v4
+        with:
+          path: "test_environments/cv_requirements.txt"
       - name: Run notebooks
         uses: nick-fields/retry@v2
         with:

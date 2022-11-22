@@ -27,7 +27,7 @@ jobs:
         if: steps.changed-files.outputs.any_changed == 'true'
         run: echo "changed_files=${{ steps.changed-files.outputs.all_changed_files }}" >> "$GITHUB_OUTPUT"
   test-notebooks:
-    name: Test notebooks
+    name: Test edited notebooks
     needs: get-edited-notebooks
     if: ${{ needs.get-edited-notebooks.outputs.edited_notebooks }}
     runs-on: ubuntu-latest
@@ -37,15 +37,14 @@ jobs:
         notebooks: ${{ fromJSON(needs.get-edited-notebooks.outputs.edited_notebooks) }}
     steps:
       - uses: actions/checkout@v3
-      - name: Setup Miniconda
-        uses: conda-incubator/setup-miniconda@v2
+      - uses: actions/setup-python@v4
         with:
-          activate-environment: py39
-          environment-file: test_environments/introductory_modules.yml
-          miniconda-version: "latest"
           python-version: "3.9"
-          channels: conda-forge,torch
-          auto-activate-base: false
+          cache: "pip"
+      - name: Install Python dependencies
+        uses: py-actions/py-dependency-install@v4
+        with:
+          path: "test_environments/cv_requirements.txt"
       - name: Run notebooks
         uses: nick-fields/retry@v2
         with:
