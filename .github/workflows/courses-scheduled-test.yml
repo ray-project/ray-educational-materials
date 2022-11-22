@@ -20,11 +20,11 @@ jobs:
         with:
           python-version: "3.9"
           cache: "pip"
-          cache-dependency-path: "test_environments/computer_vision_course/requirements.txt"
+          cache-dependency-path: "tests/semantic_segmentation_course/requirements.txt"
       - name: Install Python dependencies
         uses: py-actions/py-dependency-install@v4
         with:
-          path: "test_environments/computer_vision_course/requirements.txt"
+          path: "tests/semantic_segmentation_course/requirements.txt"
       - name: Run notebooks
         uses: nick-fields/retry@v2
         with:
