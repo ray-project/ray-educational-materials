@@ -27,6 +27,7 @@ jobs:
         if: steps.changed-files.outputs.any_changed == 'true'
         run: echo "changed_files=${{ steps.changed-files.outputs.all_changed_files }}" >> "$GITHUB_OUTPUT"
   test-notebooks:
+    name: Test notebooks
     needs: get-edited-notebooks
     if: ${{ needs.get-edited-notebooks.outputs.edited_notebooks }}
     runs-on: ubuntu-latest
