@@ -9,7 +9,11 @@ repos:
     rev: 0.6.1
     hooks:
     -   id: nbstripout
-        args: [--drop-empty-cells]
+        args:
+          [
+              --extra-keys="cell.metadata.id cell.metadata.outputId cell.metadata.pycharm metadata.kernelspec metadata.vscode",
+              --drop-empty-cells
+          ]
 -   repo: https://github.com/psf/black
     rev: 22.10.0
     hooks:
