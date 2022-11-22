@@ -1,0 +1,35 @@
+name: Notebooks test
+
+on:
+  schedule:
+    - cron: "23 11 * * SUN" # run every Sunday at 11:23am
+  workflow_dispatch:
+
+jobs:
+  test-notebooks:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        notebooks:
+          - Introductory_modules/Overview_of_Ray.ipynb
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Miniconda
+        uses: conda-incubator/setup-miniconda@v2
+        with:
+          activate-environment: py39
+          environment-file: test_environments/introductory_modules.yml
+          miniconda-version: "latest"
+          python-version: "3.9"
+          channels: conda-forge,torch
+          auto-activate-base: false
+      - name: Run notebooks
+        uses: nick-fields/retry@v2
+        with:
+          timeout_minutes: 20
+          max_attempts: 2
+          retry_on: timeout
+          command: |
+            echo "run ${{ matrix.notebooks }}"
+            ipython ${{ matrix.notebooks }}
