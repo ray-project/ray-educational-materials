@@ -15,4 +15,4 @@ repos:
     rev: 22.10.0
     hooks:
     -   id: black
-        args: [--line-length=88, --target-version=py39]
+        args: [--line-length=88, --target-version=py39, --python-cell-magics=time]
