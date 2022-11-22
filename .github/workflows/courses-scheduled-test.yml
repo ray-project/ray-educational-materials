@@ -1,0 +1,36 @@
+name: Courses test
+
+on:
+  schedule:
+    - cron: "23 11 * * SUN" # run every Sunday at 11:23am
+  workflow_dispatch:
+
+jobs:
+  test-cv:
+    name: Test computer vision course
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        notebooks:
+          - Introductory_modules/Overview_of_Ray.ipynb
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.9"
+          cache: "pip"
+          cache-dependency-path: "tests/semantic_segmentation_course/requirements.txt"
+      - name: Install Python dependencies
+        uses: py-actions/py-dependency-install@v4
+        with:
+          path: "tests/semantic_segmentation_course/requirements.txt"
+      - name: Run notebooks
+        uses: nick-fields/retry@v2
+        with:
+          timeout_minutes: 20
+          max_attempts: 2
+          retry_on: timeout
+          command: |
+            echo "run ${{ matrix.notebooks }}"
+            ipython ${{ matrix.notebooks }}
