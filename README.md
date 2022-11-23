@@ -4,6 +4,7 @@
 
 ![Ray Logo](_static/assets/Generic/ray_logo.png)
 
+[![Courses test](https://github.com/ray-project/ray-educational-materials/actions/workflows/courses-scheduled-test.yml/badge.svg)](https://github.com/ray-project/ray-educational-materials/actions/workflows/courses-scheduled-test.yml)
 <a href="https://github.com/ray-project/ray-educational-materials"><img src="https://img.shields.io/github/stars/ray-project/ray-educational-materials?logo=Ray" alt="github-stars"></a>
 <a href="https://forms.gle/9TSdDYUgxYs8SA9e8"><img src="https://img.shields.io/badge/Ray-Join%20Slack-blue" alt="join-ray-slack"></a>
 <a href="https://discuss.ray.io/"><img src="https://img.shields.io/badge/Discuss-Ask%20Questions-blue" alt="discuss"></a>
