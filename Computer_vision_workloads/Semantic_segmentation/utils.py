@@ -168,6 +168,11 @@ ade_palette = np.array(
 )
 
 
+def get_image_ids(dataset: Dataset, n_ids: int):
+    images_ids = np.random.choice(dataset.num_rows, size=n_ids, replace=False)
+    return [int(i) for i in images_ids]
+
+
 # https://huggingface.co/datasets/huggingface/label-files/blob/main/ade20k-id2label.json
 def get_labels():
     repo_id = "huggingface/label-files"
@@ -199,12 +204,13 @@ def prepare_pixels_with_segmentation(
 
 
 def visualize_predictions(
-    image: JpegImageFile, predictions: torch.Tensor, loss: np.array
+    image: JpegImageFile, predictions: torch.Tensor, loss: np.array = None
 ):
     pxs = prepare_pixels_with_segmentation(image=image, predictions=predictions)
     plt.imshow(pxs)
     plt.axis("off")
-    plt.title(f"loss: {loss:.4f}")
+    if loss is not None:
+        plt.title(f"loss: {loss:.4f}")
 
 
 def display_example_images(dataset: Dataset, n: int = 2):
