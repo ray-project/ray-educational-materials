@@ -168,9 +168,9 @@ ade_palette = np.array(
 )
 
 
-def get_image_ids(dataset: Dataset, n_ids: int):
-    images_ids = np.random.choice(dataset.num_rows, size=n_ids, replace=False)
-    return [int(i) for i in images_ids]
+def get_image_indices(dataset: Dataset, n: int):
+    image_indices = np.random.choice(dataset.num_rows, size=n, replace=False)
+    return [int(i) for i in image_indices]
 
 
 # https://huggingface.co/datasets/huggingface/label-files/blob/main/ade20k-id2label.json
