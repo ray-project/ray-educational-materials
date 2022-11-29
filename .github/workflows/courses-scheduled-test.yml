@@ -14,6 +14,7 @@ jobs:
       matrix:
         notebooks:
           - Introductory_modules/Overview_of_Ray.ipynb
+          - Introductory_modules/Introduction_to_Ray_AI_Runtime.ipynb
           - Computer_vision_workloads/Semantic_segmentation/Scaling_batch_inference.ipynb
     steps:
       - uses: actions/checkout@v3
