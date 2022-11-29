@@ -4,7 +4,10 @@
 
 ![Ray Logo](_static/assets/Generic/ray_logo.png)
 
-[![Courses test](https://github.com/ray-project/ray-educational-materials/actions/workflows/courses-scheduled-test.yml/badge.svg)](https://github.com/ray-project/ray-educational-materials/actions/workflows/courses-scheduled-test.yml)
+[![introductory notebooks test](https://github.com/ray-project/ray-educational-materials/actions/workflows/scheduled-test-introductory-modules.yml/badge.svg?branch=main)](https://github.com/ray-project/ray-educational-materials/actions/workflows/scheduled-test-introductory-modules.yml)
+[![ray core notebooks test](https://github.com/ray-project/ray-educational-materials/actions/workflows/scheduled-test-ray-core.yml/badge.svg?branch=main)](https://github.com/ray-project/ray-educational-materials/actions/workflows/scheduled-test-ray-core.yml)
+[![semantic segmentation notebooks test](https://github.com/ray-project/ray-educational-materials/actions/workflows/scheduled-test-semantic-segmentation.yml/badge.svg?branch=main)](https://github.com/ray-project/ray-educational-materials/actions/workflows/scheduled-test-semantic-segmentation.yml)
+
 <a href="https://github.com/ray-project/ray-educational-materials"><img src="https://img.shields.io/github/stars/ray-project/ray-educational-materials?logo=Ray" alt="github-stars"></a>
 <a href="https://forms.gle/9TSdDYUgxYs8SA9e8"><img src="https://img.shields.io/badge/Ray-Join%20Slack-blue" alt="join-ray-slack"></a>
 <a href="https://discuss.ray.io/"><img src="https://img.shields.io/badge/Discuss-Ask%20Questions-blue" alt="discuss"></a>
