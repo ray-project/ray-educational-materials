@@ -125,7 +125,9 @@ wcwidth==0.2.5
 webencodings==0.5.1
 websocket-client==1.4.2
 widgetsnbextension==4.0.3
+wrapt==1.14.1
 xgboost==1.7.1
+xgboost-ray==0.1.12
 xxhash==3.1.0
 yarl==1.8.1
 zipp==3.11.0
