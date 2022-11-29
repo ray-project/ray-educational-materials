@@ -1,4 +1,4 @@
-name: semantic segmentation notebooks test
+name: Semantic segmentation notebooks test
 
 on:
   schedule:

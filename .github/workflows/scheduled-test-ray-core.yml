@@ -1,4 +1,4 @@
-name: ray core notebooks test
+name: Ray core notebooks test
 
 on:
   schedule:
