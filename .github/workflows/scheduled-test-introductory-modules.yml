@@ -1,13 +1,13 @@
-name: Courses test
+name: introductory notebooks test
 
 on:
   schedule:
-    - cron: "23 11 * * SUN" # run every Sunday at 11:23am
+    - cron: "23 09 * * SUN" # run every Sunday at 09:23am
   workflow_dispatch:
 
 jobs:
   test-cv:
-    name: Test computer vision course
+    name: Test introductory notebooks
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -15,7 +15,6 @@ jobs:
         notebooks:
           - Introductory_modules/Overview_of_Ray.ipynb
           - Introductory_modules/Introduction_to_Ray_AI_Runtime.ipynb
-          - Computer_vision_workloads/Semantic_segmentation/Scaling_batch_inference.ipynb
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
