@@ -190,27 +190,25 @@ def get_labels():
 
 
 def prepare_pixels_with_segmentation(
-    image: JpegImageFile, predictions: Union[torch.Tensor, np.array]
+    image: JpegImageFile, segmentation_maps: Union[torch.Tensor, np.array]
 ):
-    predictions = np.array(predictions)
+    segmentation_maps = np.array(segmentation_maps)
     color_segments = np.zeros(
-        (predictions.shape[0], predictions.shape[1], 3), dtype=np.uint8
+        (segmentation_maps.shape[0], segmentation_maps.shape[1], 3), dtype=np.uint8
     )
     for label, color in enumerate(ade_palette):
-        color_segments[predictions == label, :] = color
+        color_segments[segmentation_maps == label, :] = color
     color_segments = color_segments[..., ::-1]  # convert to BGR
     pixels_with_segmentation = np.array(image) * 0.5 + color_segments * 0.5
     return pixels_with_segmentation.astype(np.uint8)
 
 
-def visualize_predictions(
-    image: JpegImageFile, predictions: torch.Tensor, loss: np.array = None
-):
-    pxs = prepare_pixels_with_segmentation(image=image, predictions=predictions)
+def visualize_predictions(image: JpegImageFile, segmentation_maps: torch.Tensor):
+    pxs = prepare_pixels_with_segmentation(
+        image=image, segmentation_maps=segmentation_maps
+    )
     plt.imshow(pxs)
     plt.axis("off")
-    if loss is not None:
-        plt.title(f"loss: {loss:.4f}")
 
 
 def display_example_images(dataset: Dataset, n: int = 2):
@@ -221,7 +219,14 @@ def display_example_images(dataset: Dataset, n: int = 2):
     ):
         image_with_pixels = prepare_pixels_with_segmentation(
             image=dataset[int(j)]["image"],
-            predictions=np.array(dataset[int(j)]["annotation"]),
+            segmentation_maps=np.array(dataset[int(j)]["annotation"]),
         )
         axes[int(i / n), i % n].imshow(image_with_pixels)
         axes[int(i / n), i % n].axis("off")
+
+
+def convert_image_to_rgb(data_item):
+    if data_item["image"].mode != "RGB":
+        data_item["image"] = data_item["image"].convert(mode="RGB")
+
+    return data_item
