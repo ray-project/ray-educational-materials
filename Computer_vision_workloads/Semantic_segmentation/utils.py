@@ -203,14 +203,10 @@ def prepare_pixels_with_segmentation(
     return pixels_with_segmentation.astype(np.uint8)
 
 
-def visualize_predictions(
-    image: JpegImageFile, predictions: torch.Tensor, loss: np.array = None
-):
+def visualize_predictions(image: JpegImageFile, predictions: torch.Tensor):
     pxs = prepare_pixels_with_segmentation(image=image, predictions=predictions)
     plt.imshow(pxs)
     plt.axis("off")
-    if loss is not None:
-        plt.title(f"loss: {loss:.4f}")
 
 
 def display_example_images(dataset: Dataset, n: int = 2):
@@ -225,3 +221,10 @@ def display_example_images(dataset: Dataset, n: int = 2):
         )
         axes[int(i / n), i % n].imshow(image_with_pixels)
         axes[int(i / n), i % n].axis("off")
+
+
+def convert_image_to_rgb(data_item):
+    if data_item["image"].mode != "RGB":
+        data_item["image"] = data_item["image"].convert(mode="RGB")
+
+    return data_item
