@@ -1,0 +1,12 @@
+ray[default]
+ray[all]
+jupyter
+jupyterlab
+scikit-learn
+tune-sklearn
+xgboost
+xgboost-ray
+tqdm
+torch
+torchvision
+transformers
