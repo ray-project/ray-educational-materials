@@ -2,7 +2,7 @@
 
 © 2022, Anyscale Inc. All Rights Reserved
 
-![Ray Logo](_static/assets/Generic/ray_logo.png)
+<img src="_static/assets/Generic/ray_logo.png" width="30%">
 
 <a href="https://github.com/ray-project/ray-educational-materials"><img src="https://img.shields.io/github/stars/ray-project/ray-educational-materials?logo=Ray" alt="github-stars"></a>
 <a href="https://forms.gle/9TSdDYUgxYs8SA9e8"><img src="https://img.shields.io/badge/Ray-Join%20Slack-blue" alt="join-ray-slack"></a>
