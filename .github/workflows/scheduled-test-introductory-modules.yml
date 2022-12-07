@@ -29,7 +29,7 @@ jobs:
       - name: Run notebooks
         uses: nick-fields/retry@v2
         with:
-          timeout_minutes: 50
+          timeout_minutes: 90
           max_attempts: 2
           retry_on: timeout
           command: |
