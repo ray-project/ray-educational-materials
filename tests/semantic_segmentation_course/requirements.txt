@@ -11,7 +11,6 @@ async-timeout==4.0.2
 attrs==22.1.0
 Babel==2.11.0
 backcall==0.2.0
-bayesian-optimization==1.4.1
 beautifulsoup4==4.11.1
 bleach==5.0.1
 blessed==1.19.1
