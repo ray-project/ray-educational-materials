@@ -200,7 +200,7 @@ dependencies:
   - python-json-logger=2.0.1=pyh9f0ad1d_0
   - python-xxhash=3.0.0=py39h02fc5c5_2
   - python_abi=3.9=3_cp39
-  - pytorch=1.13.0=py3.9_0
+  - pytorch=1.13.1=py3.9_0
   - pytz=2022.6=pyhd8ed1ab_0
   - pyyaml=6.0=py39h02fc5c5_5
   - pyzmq=24.0.1=py39h0553236_1
@@ -228,7 +228,7 @@ dependencies:
   - tk=8.6.12=he1e0b03_0
   - tokenizers=0.11.4=py39h5c5695e_1
   - tomli=2.0.1=pyhd8ed1ab_0
-  - torchvision=0.14.0=py39_cpu
+  - torchvision=0.14.1=py39_cpu
   - tornado=6.2=py39h02fc5c5_1
   - tqdm=4.64.1=pyhd8ed1ab_0
   - traitlets=5.6.0=pyhd8ed1ab_0
