@@ -26,6 +26,7 @@ Welcome to a collection of education materials focused on [Ray](https://www.ray.
 | [Ray Core: Remote Classes as Actors, part 1](https://github.com/ray-project/ray-educational-materials/blob/main/Ray_Core/Ray_Core_3_Remote_Classes_part_1.ipynb)            | Work with stateful actors.                                                              |
 | [Ray Core: Remote Classes as Actors, part 2](https://github.com/ray-project/ray-educational-materials/blob/main/Ray_Core/Ray_Core_4_Remote_Classes_part_2.ipynb)            | Learn "Tree of Actors" pattern.                                                         |
 | [Scaling batch inference](https://github.com/ray-project/ray-educational-materials/blob/main/Computer_vision_workloads/Semantic_segmentation/Scaling_batch_inference.ipynb) | Learn about scaling batch inference in computer vision with Ray.                        |
+| [Optional: Batch inference with Ray Datasets](https://github.com/ray-project/ray-educational-materials/blob/main/Computer_vision_workloads/Semantic_segmentation/Batch_inference_with_Ray_Datasets.ipynb) | Bonus content for scaling batch inference using Ray Datasets.                        |
 
 ## Connect with the Ray community
 
