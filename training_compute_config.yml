@@ -1,0 +1,12 @@
+cloud: testcloud # You may specify `cloud_id` instead
+max_workers: 10
+head_node_type:
+  name: head_node_type
+  instance_type: g5.4xlarge
+aws:
+  BlockDeviceMappings:
+  - DeviceName: "/dev/sda1"
+    Ebs:
+      VolumeSize: 300
+      VolumeType: "gp3"
+      DeleteOnTermination: true
