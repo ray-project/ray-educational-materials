@@ -1,0 +1,7 @@
+name: "xgboost_demo_v1.3"
+compute_config: "anyscale-xgboost-gpu-job"
+cluster_env: "anyscale-training-cluster-environment:1"
+entrypoint: python xgboost_training.py
+
+# This is only meant to be executed from an Anyscale Workspace:
+# anyscale job submit xgboost_training_job.yml
