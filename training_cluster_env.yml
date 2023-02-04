@@ -1,6 +1,6 @@
 base_image: anyscale/ray:2.1.0-py39
-# env_vars:
-#   CUSTOM_EFS_IP: '10.0.12.131'
+env_vars:
+  CUSTOM_EFS_IP: '10.0.12.131'
 python:
   pip_packages:
     - datasets==2.7.1
