@@ -32,7 +32,7 @@ dill==0.3.6
 distlib==0.3.6
 entrypoints==0.4
 executing==1.2.0
-fastapi==0.88.0
+fastapi==0.92.0
 fastjsonschema==2.16.2
 filelock==3.8.0
 fonttools==4.38.0
