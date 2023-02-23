@@ -12,6 +12,7 @@
 [![Introductory notebooks test](https://github.com/ray-project/ray-educational-materials/actions/workflows/scheduled-test-introductory-modules.yml/badge.svg?branch=main)](https://github.com/ray-project/ray-educational-materials/actions/workflows/scheduled-test-introductory-modules.yml)
 [![Ray core notebooks test](https://github.com/ray-project/ray-educational-materials/actions/workflows/scheduled-test-ray-core.yml/badge.svg?branch=main)](https://github.com/ray-project/ray-educational-materials/actions/workflows/scheduled-test-ray-core.yml)
 [![Semantic segmentation notebooks test](https://github.com/ray-project/ray-educational-materials/actions/workflows/scheduled-test-semantic-segmentation.yml/badge.svg?branch=main)](https://github.com/ray-project/ray-educational-materials/actions/workflows/scheduled-test-semantic-segmentation.yml)
+[![Observability notebooks test](https://github.com/ray-project/ray-educational-materials/actions/workflows/scheduled-test-observability-modules.yml/badge.svg)](https://github.com/ray-project/ray-educational-materials/actions/workflows/scheduled-test-observability-modules.yml)
 
 Welcome to a collection of education materials focused on [Ray](https://www.ray.io/), a distributed compute framework for scaling your Python and machine learning workloads from a laptop to a cluster.
 
