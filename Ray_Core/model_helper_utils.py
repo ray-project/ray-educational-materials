@@ -11,14 +11,14 @@ import ray
 # states to inspect 
 STATES = ["INITIALIZED", "RUNNING", "DONE"]
 
-DECISION_TREE_CONFIGS = {"max_depth": 15,
+DECISION_TREE_CONFIGS = {"max_depth": 10,
                          "name": "decision_tree"}
 
-RANDOM_FOREST_CONFIGS = {"n_estimators": 150,
+RANDOM_FOREST_CONFIGS = {"n_estimators": 25,
                         "name": "random_forest"}
 
 XGBOOST_CONFIGS = {"max_depth": 10,
-                   "n_estimators": 150,
+                   "n_estimators": 25,
                    "lr": 0.1,
                    "eta": 0.3,
                    "colsample_bytree": 1,
