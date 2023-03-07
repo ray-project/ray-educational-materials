@@ -25,6 +25,9 @@ XGBOOST_CONFIGS = {
     "name": "xgboost",
 }
 
+# dataset
+X_data, y_data = fetch_california_housing(return_X_y=True, as_frame=True)
+
 
 class ActorCls:
     """
@@ -35,8 +38,6 @@ class ActorCls:
         self.configs = configs
         self.name = configs["name"]
         self.state = STATES[0]
-
-        X_data, y_data = fetch_california_housing(return_X_y=True, as_frame=True)
         self.X_train, self.X_test, self.y_train, self.y_test = train_test_split(
             X_data, y_data, test_size=0.2, random_state=4
         )
