@@ -3,7 +3,7 @@ from ray.air.config import ScalingConfig
 from ray.data.preprocessors import MinMaxScaler
 from ray.train.xgboost import XGBoostTrainer
 
-# Start ray runtime
+# Initialize Ray runtime
 ray.init()
 
 ########
@@ -50,6 +50,7 @@ trainer = XGBoostTrainer(
 # The resulting object grants access to metrics, checkpoints, and errors
 result = trainer.fit()
 
-training_accuracy = 1 - result.metrics['train-error']
-validation_accuracy = 1 - result.metrics['valid-error']
-iterations = result.metrics['training_iteration']
+# Report results
+print(f"train acc = {1 - result.metrics['train-error']:.4f}")
+print(f"valid acc = {1 - result.metrics['valid-error']:.4f}")
+print(f"iteration = {result.metrics['training_iteration']:.4f}")
