@@ -1,22 +1,19 @@
-name: Ray core notebooks test
+name: Observability notebooks test
 
 on:
   schedule:
-    - cron: "23 10 * * SUN" # run every Sunday at 10:23am
+    - cron: "23 08 * * SUN" # run every Sunday at 08:23am
   workflow_dispatch:
 
 jobs:
   test-cv:
-    name: Test ray core notebooks
+    name: Test observability notebooks
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
         notebooks:
-          - Ray_Core/Ray_Core_1_Remote_Functions.ipynb
-          - Ray_Core/Ray_Core_2_Remote_Objects.ipynb
-          - Ray_Core/Ray_Core_3_Remote_Classes_part_1.ipynb
-          - Ray_Core/Ray_Core_4_Remote_Classes_part_2.ipynb
+          - Observability/Ray_observability_part_1.ipynb
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
@@ -31,7 +28,7 @@ jobs:
       - name: Run notebooks
         uses: nick-fields/retry@v2
         with:
-          timeout_minutes: 60
+          timeout_minutes: 90
           max_attempts: 2
           retry_on: timeout
           command: |
