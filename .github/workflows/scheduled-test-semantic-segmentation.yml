@@ -14,6 +14,7 @@ jobs:
       matrix:
         notebooks:
           - Computer_vision_workloads/Semantic_segmentation/Scaling_batch_inference.ipynb
+          - Computer_vision_workloads/Semantic_segmentation/Batch_inference_with_Ray_Datasets.ipynb
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
@@ -28,7 +29,7 @@ jobs:
       - name: Run notebooks
         uses: nick-fields/retry@v2
         with:
-          timeout_minutes: 20
+          timeout_minutes: 40
           max_attempts: 2
           retry_on: timeout
           command: |
