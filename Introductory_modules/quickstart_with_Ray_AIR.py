@@ -53,4 +53,4 @@ result = trainer.fit()
 # Report results
 print(f"train acc = {1 - result.metrics['train-error']:.4f}")
 print(f"valid acc = {1 - result.metrics['valid-error']:.4f}")
-print(f"iteration = {result.metrics['training_iteration']:.4f}")
+print(f"iteration = {result.metrics['training_iteration']}")
