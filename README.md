@@ -2,7 +2,7 @@
 
 © 2022, Anyscale Inc. All Rights Reserved
 
-<img src="https://technical-training-assets.s3.us-west-2.amazonaws.com/Generic/ray_logo.png" width="20%" loading="lazy">
+<img src="https://technical-training-assets.s3.us-west-2.amazonaws.com/Generic/ray_logo.png" width="30%" loading="lazy">
 
 <a href="https://github.com/ray-project/ray-educational-materials"><img src="https://img.shields.io/github/stars/ray-project/ray-educational-materials?logo=Ray" alt="github-stars"></a>
 <a href="https://forms.gle/9TSdDYUgxYs8SA9e8"><img src="https://img.shields.io/badge/Ray-Join%20Slack-blue" alt="join-ray-slack"></a>
@@ -35,10 +35,6 @@ Welcome to a collection of education materials focused on [Ray](https://www.ray.
 
 You can learn and get more involved with the Ray community of developers and researchers:
 
-# Connect with the Ray community
-
-You can learn and get more involved with the Ray community of developers and researchers:
-
 * [**Ray documentation**](https://docs.ray.io/en/latest)
 
 * [**Official Ray site**](https://www.ray.io/)  
@@ -59,4 +55,4 @@ Ray is constantly evolving to improve developer experience. Submit feature reque
 * [**Become a Ray contributor**](https://docs.ray.io/en/latest/ray-contribute/getting-involved.html)  
 We welcome community contributions to improve our documentation and Ray framework.
 
-<img src="https://technical-training-assets.s3.us-west-2.amazonaws.com/Generic/ray_logo.png" width="20%" loading="lazy">
+<img src="https://technical-training-assets.s3.us-west-2.amazonaws.com/Generic/ray_logo.png" width="30%" loading="lazy">
