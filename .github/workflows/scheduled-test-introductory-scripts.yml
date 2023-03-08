@@ -1,22 +1,20 @@
-name: Ray core notebooks test
+name: Introductory scripts test
 
 on:
   schedule:
-    - cron: "23 10 * * SUN" # run every Sunday at 10:23am
+    - cron: "21 10 * * SUN" # run every Sunday at 10:21am
   workflow_dispatch:
 
 jobs:
   test-cv:
-    name: Test ray core notebooks
+    name: Test introductory scripts
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
-        notebooks:
-          - Ray_Core/Ray_Core_1_Remote_Functions.ipynb
-          - Ray_Core/Ray_Core_2_Remote_Objects.ipynb
-          - Ray_Core/Ray_Core_3_Remote_Classes_part_1.ipynb
-          - Ray_Core/Ray_Core_4_Remote_Classes_part_2.ipynb
+        scripts:
+          - Introductory_modules/quickstart_with_Ray_AIR.py
+          - Introductory_modules/quickstart_with_Ray_Core.py
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
@@ -28,12 +26,12 @@ jobs:
         uses: py-actions/py-dependency-install@v4
         with:
           path: "tests/semantic_segmentation_course/requirements.txt"
-      - name: Run notebooks
+      - name: Run scripts
         uses: nick-fields/retry@v2
         with:
-          timeout_minutes: 60
+          timeout_minutes: 15
           max_attempts: 2
           retry_on: timeout
           command: |
-            echo "run ${{ matrix.notebooks }}"
-            ipython ${{ matrix.notebooks }}
+            echo "run ${{ matrix.scripts }}"
+            python ${{ matrix.scripts }}
