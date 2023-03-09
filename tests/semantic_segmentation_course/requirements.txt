@@ -130,6 +130,7 @@ tensorboardX==2.6
 terminado==0.17.1
 threadpoolctl==3.1.0
 tinycss2==1.2.1
+tokenize-rt==5.0.0
 tokenizers==0.13.2
 tomli==2.0.1
 torch==1.13.1
@@ -137,7 +138,7 @@ torchvision==0.14.1
 tornado==6.2
 tqdm==4.65.0
 traitlets==5.9.0
-transformers==4.24.0
+transformers==4.26.1
 typing_extensions==4.5.0
 uri-template==1.2.0
 urllib3==1.26.14
