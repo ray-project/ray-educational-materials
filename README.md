@@ -32,7 +32,7 @@ Welcome to a collection of education materials focused on [Ray](https://www.ray.
 | [Ray observability part 1](https://github.com/ray-project/ray-educational-materials/blob/main/Observability/Ray_observability_part_1.ipynb)                                                               | Introducing the Ray State API and Ray Dashboard UI as tools for observing the Ray cluster and applications.                                                                          |
 | [LLM model fine-tuning and batch inference](https://github.com/ray-project/ray-educational-materials/blob/main/NLP_workloads/Text_generation/LLM_finetuning_and_batch_inference.ipynb)                    | Fine-tuning a Hugging Face Transformer (FLAN-T5) on the Alpaca dataset. Also includes distributed hyperparameter tuning and batch inference.                                         |
 | [Multilingual chat with Ray Serve](https://github.com/ray-project/ray-educational-materials/blob/main/Ray_Serve/Multilingual_Chat_with_Ray_Serve_GPU.ipynb)                                               | Serving a Hugging Face LLM chat model with Ray Serve. Integrating multiple models and services within Ray Serve (language detection and translation) to implement multilingual chat. |
-
+| [Ray Train featuring Tensorflow and word2vec](https://github.com/ray-project/ray-educational-materials/blob/main/NLP_workloads/Text_embeddings/Train_embeddings_tensorflow.ipynb)                                            | Intro to Ray Train. Distributed training with TensorflowTrainer. Porting a word2vec model from single-machine Tensorflow to distributed training with Ray. |
 
 ## Connect with the Ray community
 
