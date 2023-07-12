@@ -105,7 +105,7 @@ ptyprocess==0.7.0
 pure-eval==0.2.2
 pyarrow==11.0.0
 pycparser==2.21
-pydantic==2.0.2
+pydantic==1.10.11
 pydantic_core==2.1.2
 Pygments==2.15.1
 pyparsing==3.0.9
