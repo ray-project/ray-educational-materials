@@ -123,6 +123,7 @@ rfc3339-validator==0.1.4
 rfc3986-validator==0.1.1
 rpds-py==0.8.10
 safetensors==0.3.1
+scikit-learn==1.2.1
 scipy==1.10.1
 Send2Trash==1.8.2
 six==1.16.0
