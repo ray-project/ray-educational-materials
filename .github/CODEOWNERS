@@ -1,11 +1,2 @@
 # global owner
 * @kamil-kaczmarek
-
-# introductory modules
-/Introductory_modules/ @kamil-kaczmarek @emmyscode
-
-# Ray Core modules
-/Ray_Core/ @kamil-kaczmarek
-
-# cv modules, semantic segmentation
-/Computer_vision_workloads/Semantic_segmentation/ @kamil-kaczmarek @emmyscode
