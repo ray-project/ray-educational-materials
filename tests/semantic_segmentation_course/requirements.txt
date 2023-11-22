@@ -146,7 +146,7 @@ transformers==4.30.0
 typing_extensions==4.7.1
 tzdata==2023.3
 uri-template==1.3.0
-urllib3==2.0.3
+urllib3==2.0.7
 virtualenv==20.23.1
 wcwidth==0.2.6
 webcolors==1.13
