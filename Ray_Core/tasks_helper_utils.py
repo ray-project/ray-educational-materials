@@ -67,7 +67,6 @@ URLS = [
     "https://images.pexels.com/photos/116675/pexels-photo-116675.jpeg",
     "https://images.pexels.com/photos/3586966/pexels-photo-3586966.jpeg",
     "https://images.pexels.com/photos/313782/pexels-photo-313782.jpeg",
-    "https://www.nasa.gov/centers/stennis/images/content/702979main_SSC-2012-01487.jpg",
     "https://live.staticflickr.com/2443/3984080835_71b0426844_b.jpg",
     "https://www.aero.jaxa.jp/eng/facilities/aeroengine/images/th_aeroengine05.jpg",
     "https://images.pexels.com/photos/370717/pexels-photo-370717.jpeg",
